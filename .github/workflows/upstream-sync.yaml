@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout fork
         uses: actions/checkout@v2
+        with:
+          ref:  master
 
       - name: Sync upstream changes
         id: sync
