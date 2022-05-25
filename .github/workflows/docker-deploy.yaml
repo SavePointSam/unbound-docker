@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   push:
-    branches: [SPS-002_docker-deploy]
+    branches: [SPS-058_support-arm64]
 
   workflow_dispatch:
     inputs:
