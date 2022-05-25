@@ -39,7 +39,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: ${{ env.REGISTRY_TITLE }}/unbound
-          tags: ${{ env.REGISTRY_TITLE }}/app:latest,${{ env.REGISTRY_TITLE }}/app:${{ env.UNBOUND_VERSION }}
+          tags: ${{ env.REGISTRY_TITLE }}/unbound:latest,${{ env.REGISTRY_TITLE }}/unbound:${{ env.UNBOUND_VERSION }}
 
       - name: Login to Dockerhub
         uses: docker/login-action@v1
